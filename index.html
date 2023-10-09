@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Bar Quantity Calculator</title>
+</head>
+<body>
+    <div class="calculator">
+        <h1>Bar Quantity Calculator</h1>
+
+        <div class="input-group">
+            <label for="feet">Feet:</label>
+            <input type="number" id="feet" placeholder="Feet">
+        </div>
+
+        <div class="input-group">
+            <label for="inches">Inches (less than or equal to 12):</label>
+            <input type="number" id="inches" placeholder="Enter inches (0-12)">
+    </div>
+
+        <div class="input-group">
+            <label for="stockLength">Stock Length:</label>
+            <select id="stockLength">
+                <option value="10">10 feet</option>
+                <option value="20">20 feet</option>
+                <option value="30">30 feet</option>
+                <option value="40">40 feet</option>
+                <option value="50">50 feet</option>
+                <option value="60">60 feet</option>
+                <!-- Add more options as needed -->
+
+            </select>
+        </div>
+
+        <button onclick="calculateQuantity()">Calculate</button>
+
+        <h2>Result:</h2>
+        <p id="result">Quantity: <span id="quantity"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
